@@ -16,7 +16,12 @@ void dealHand(Deck &d, Player &p, int numCards);
 int main()
 {
    Card _As = Card();
-   Card _5c = Card(5, Card::clubs);
+   cout << _As.rankString(1) << endl;
+   cout << _As.rankString(5) << endl;
+   cout << _As.rankString(10) << endl;
+   cout << _As.rankString(11) << endl;
+   cout << _As.rankString(12) << endl;
+   cout << _As.rankString(13) << endl;
 }
 /*
 int main( )

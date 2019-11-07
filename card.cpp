@@ -7,6 +7,7 @@
 #include "card.h"
 #include <iostream>
 #include <stdlib.h>
+#include <string>
 
 using namespace std;
 
@@ -27,6 +28,7 @@ Card::Card(int rank, Suit s)
 
 string Card::toString() const
 {
+   string card_s;     
    return "toString";
 }
 
@@ -42,12 +44,40 @@ int Card::getRank() const
 
 string Card::suitString(Suit s) const
 {
-    return "suitString";
+   string suit_s;
+
+   switch (s) 
+   {
+      case suit(0): suit_s = "s";
+           break;
+      case hearts(1); suit_s = "h";
+           break;
+      case diamond(2) suit_s = "d";
+           break;
+      case  clubs(3): suit_s = "c"; 
+           break;
+   }
+   return suit_s;
 }
 
 string Card::rankString(int r) const
 {
-    return "rankString";  
+   string rank_s; 
+    
+   switch (r)
+   {
+      case 1: rank_s = "A";
+              break;
+      case 11: rank_s = "J";
+               break;
+      case 12: rank_s = "Q";
+    	       break;
+      case 13: rank_s = "K";
+               break;
+      default: rank_s = std::to_string(r);
+   }
+    
+   return rank_s;  
 }
 
 bool Card::operator == (const Card& rhs) const
