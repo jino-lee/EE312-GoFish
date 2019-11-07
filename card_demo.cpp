@@ -13,8 +13,12 @@ using namespace std;
 void dealHand(Deck &d, Player &p, int numCards);
 
 
-
-
+int main()
+{
+   Card _As = Card();
+   Card _5c = Card(5, Card::clubs);
+}
+/*
 int main( )
 {
     int numCards = 5;
@@ -41,4 +45,4 @@ void dealHand(Deck &d, Player &p, int numCards)
    for (int i=0; i < numCards; i++)
       p.addCard(d.dealCard());
 }
-   
+*/  

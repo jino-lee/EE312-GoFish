@@ -25,70 +25,44 @@ Card::Card(int rank, Suit s)
    mySuit = s;
 }
 
-string Card::toString()
+string Card::toString() const
 {
-   string suit_s;
-   string rank_s; 
-
-   switch (myRank)
-   {
-      case 1:	rank_s = "A";
- 	    	break;	
-      case 11: 	rank_s = "J";
-   	      	break;
-      case 12: 	rank_s = "Q";
-		break;
-      case 13:  rank_s = "K";
-		break;
-      default:	itoa(myRank, &rank_s, 10);
-   		break;
-   }
-   
-   switch (mySuit)
-   {
-      case Enum::spades:   suit_s = "s";
-                   	   break;
-      case Enum::hearts:   suit_s = "h";
-         	   	   break;
-      case Enum::diamonds: suit_s = "d";
-           	   	   break;
-      case Enum::clubs:    suit_s = "c";
-  		   	   break;
-   
-    return (rank_s + suit_s);        
+   return "toString";
 }
 
-bool Card::sameSuitAs(const Card& c)
+bool Card::sameSuitAs(const Card& c) const
 {
     return (mySuit == c.mySuit);
 }
 
-int Card::getRank()
+int Card::getRank() const
 {
     return myRank;
 }
 
-string Card::suitString(Suit s)
+string Card::suitString(Suit s) const
 {
-
+    return "suitString";
 }
 
-string Card::rankString(int r)
+string Card::rankString(int r) const
 {
-   
+    return "rankString";  
 }
 
-bool Card::operator == (const Card& rhs)
+bool Card::operator == (const Card& rhs) const
 {
    return (myRank == rhs.myRank && mySuit == rhs.mySuit);
 }
 
-bool Card::operator != (const Card& rhs)
+bool Card::operator != (const Card& rhs) const
 {
    return (myRank != rhs.myRank || mySuit != rhs.mySuit);
 }
 
-
+ostream& operator << (ostream& out, const Card& c) {
+   return out;
+}
 
 
 
