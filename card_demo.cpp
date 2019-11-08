@@ -15,13 +15,49 @@ void dealHand(Deck &d, Player &p, int numCards);
 
 int main()
 {
-   Card _As = Card();
-   cout << _As.rankString(1) << endl;
-   cout << _As.rankString(5) << endl;
-   cout << _As.rankString(10) << endl;
-   cout << _As.rankString(11) << endl;
-   cout << _As.rankString(12) << endl;
-   cout << _As.rankString(13) << endl;
+   Card _As = Card();	//ace of spaces
+   Card _As2 = Card(1, Card::spades); 
+   Card _Jd = Card(11, Card::diamonds);
+   Card _Ad = Card(1, Card::diamonds);
+
+   cout << "Testing toString: " << endl;
+   cout << "As: " << _As.toString() << endl;
+   cout << "As2: " << _As2.toString() << endl;
+   cout << "Jd: " << _Jd.toString() << endl;
+ 
+   cout << "Testing sameSuitAs: " << endl;
+   if ( _As.sameSuitAs(_As2))
+   {
+      cout << "_As == _As2" << endl;
+   }
+   else 
+   {
+      cout << "_As != _As2" << endl;
+   }
+  
+   if (_As2.sameSuitAs(_Jd))
+   {
+      cout << "_As2 == _Jd" << endl;
+   }
+   else 
+   {
+      cout << "_As2 != _Jd" << endl;
+   }
+   
+   cout << "Testing overriden == / !=" << endl;
+   if (_As == _As2)
+   {
+      cout << "_As == _As2" << endl;
+   }
+   if (_As != _Jd) 
+   {
+      cout << "_As != _Jd" << endl;
+   }  
+
+   cout << "Testing overridden <<" << endl;
+   cout << _As << endl;
+   cout << _As2 << endl;
+   cout << _Jd << endl;
 }
 /*
 int main( )
