@@ -5,38 +5,72 @@
 
 #include "deck.h"
 #include "card.h"
+#include <time.h>
 
 using namespace std;
 
 //Default constructor 
 //creates a sorted deck
-Deck()
+Deck::Deck()
 {
    myIndex = 0; 
+   srand(time(0)); // seed random number generator in constructor (seed only once per deck)
    
-   for (int i = 0; i < 13; i++)
-   {
-      myCards[myIndex] = Card(i, spades);
+   // Initializes all cards in order (13 cards of spades, diamonds, clubs, then hearts)
+   for (int i = 1; i <= 13; i++) {
+      myCards[myIndex] = Card(i, Card::spades);
       myIndex = myIndex + 1;       
    }
-   //repeat for remaing suits?
+   for (int i = 1; i <= 13; i++) {
+      myCards[myIndex] = Card(i, Card::diamonds);
+      myIndex = myIndex + 1;       
+   }
+   for (int i = 1; i <= 13; i++) {
+      myCards[myIndex] = Card(i, Card::clubs);
+      myIndex = myIndex + 1;       
+   }
+   for (int i = 1; i <= 13; i++) {
+      myCards[myIndex] = Card(i, Card::hearts);
+      myIndex = myIndex + 1;       
+   }
+   myIndex = myIndex - 1; // 52 is not a valid index... decrement by 1 to represent the top of the deck
 }
 
-//shuffle the deck, all 52 cards present
-void shuffle()
+// shuffle the deck, ONLY if all 52 cards present
+void Deck::shuffle()
 {
+   if (myIndex == 51) { // only shuffle if no cards have been dealt
+      int index1, index2;
+      Card temp;
 
+      for (int i = 0; i < 104; i++) {
+         // get two random index values between 0 - 51
+         index1 = rand() % 52;
+         index2 = rand() % 52;
+
+         // swap cards at these indexes
+         temp = myCards[index1];
+         myCards[index1] = myCards[index2];
+         myCards[index2] = temp;
+      }
+   }
 }
 
-//get a card
-//after 52 are dealt, fail
-Card dealCard()
+// Get a card from the deck
+// Pre-condition: MAKE SURE DECK IS NOT EMPTY (check d.size() != 0) before calling this function
+Card Deck::dealCard()
 {
+   Card topCard;
+   if (myIndex != 0) {
+      topCard = myCards[myIndex];
+      myIndex--;
+   }
 
+   return topCard;
 }
 
 //# of cards left in the deck
-int size() const
+int Deck::size() const
 {
-
+   return (myIndex + 1);
 }

@@ -9,8 +9,6 @@
 #include <iostream>
 #include <string>
 #include <vector>
-
-
 #include "card.h"
 using namespace std;
 

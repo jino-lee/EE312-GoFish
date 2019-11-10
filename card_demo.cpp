@@ -44,7 +44,7 @@ int main()
       cout << "_As2 != _Jd" << endl;
    }
    
-   cout << "Testing overriden == / !=" << endl;
+   cout << "Testing overriden == and != operators" << endl;
    if (_As == _As2)
    {
       cout << "_As == _As2" << endl;
@@ -54,10 +54,141 @@ int main()
       cout << "_As != _Jd" << endl;
    }  
 
-   cout << "Testing overridden <<" << endl;
+   cout << "Testing overridden << operator" << endl;
    cout << _As << endl;
    cout << _As2 << endl;
    cout << _Jd << endl;
+   cout << "---------------------------------------------------------------------" << endl;
+  
+   Deck d;  //create a deck of cards
+   cout << endl << "Now testing Deck class methods..." << endl;
+   cout << "Testing shuffle method" << endl;
+   d.shuffle();
+   cout <<  d.dealCard() << endl;
+   cout << d.dealCard() << endl;
+   cout << d.dealCard() << endl;
+   cout << d.dealCard() << endl;
+   cout << "Remaining deck size: " << d.size() << endl; // should be 48
+   cout << "---------------------------------------------------------------------" << endl;
+  
+   cout << endl << "Now testing Player class methods..." << endl;
+   Player Andy("Andy");
+   Player Jin("Jin");
+   Card card1;
+   Card card2;
+   Card chosenCard;
+   Card removedCard;
+   Card drawnCard;
+   int chosenCardRank;
+   cout << "First player's name is: " << Andy.getName() << endl;
+   cout << "Second player's name is: " << Jin.getName() << endl;
+
+   // Deal 7 cards to each player
+   cout << "Dealing cards..." << endl;
+   for (int i = 0; i < 7; i++) {
+      Andy.addCard(d.dealCard());
+      Jin.addCard(d.dealCard());
+   }
+   cout << "Andy's hand is: " << Andy.showHand() << endl;
+   cout << "Jin's hand is: " << Jin.showHand() << endl;
+
+   // checkHandForBook() for any pairs after dealing
+   while (Andy.checkHandForBook(card1, card2) == true) {
+      Andy.bookCards(card1, card2);
+      cout << "Andy books " << card1.toString() << " and " << card2.toString() << endl;
+   }
+   while (Jin.checkHandForBook(card1, card2) == true) {
+      Jin.bookCards(card1, card2);
+      cout << "Jin books " << card1.toString() << " and " << card2.toString() << endl;
+   }
+   cout << endl;
+
+
+   // Andy's 1st turn...
+   cout << "Andy: Do you have a " << Andy.chooseCardFromHand().rankString(Andy.chooseCardFromHand().getRank()) << "?" << endl;
+   chosenCard = Andy.chooseCardFromHand();
+   if (Jin.rankInHand(chosenCard) == true) {
+      cout << "Jin: Yes. I have a " << chosenCard.rankString(chosenCard.getRank()) << endl;
+
+      while (Jin.rankInHand(chosenCard) == true) { // keep checking for specified rank of chosen card in opponent's hand
+         removedCard = Jin.removeCardFromHand(chosenCard);
+         Andy.addCard(removedCard);
+         cout << "Andy takes " << removedCard.toString() << " from Jin." << endl;
+         while (Andy.checkHandForBook(card1, card2) == true) {
+            Andy.bookCards(card1, card2);
+            cout << "Andy books " << card1.toString() << " and " << card2.toString() << endl;
+         }
+      }
+      cout << endl;
+   }
+   else {
+      cout << "Jin: Go Fish." << endl;
+      if (d.size() > 0) { // as long as deck is not empty
+         drawnCard = d.dealCard();
+      }
+      else {
+         cout << "GAME OVER! (Deck is empty)." << endl;
+      }
+      cout << "Andy draws a " << drawnCard.toString() << endl;
+      Andy.addCard(drawnCard);
+      while (Andy.checkHandForBook(card1, card2) == true) {
+            Andy.bookCards(card1, card2);
+            cout << "Andy books " << card1.toString() << " and " << card2.toString() << endl;
+      }
+      cout << endl;
+   }
+
+   cout << "Game updates after Andy's turn..." << endl;
+   cout << "Andy's hand is: " << Andy.showHand() << endl;
+   cout << "Andy's books are: " << Andy.showBooks() << endl;
+   cout << "Jin's hand is: " << Jin.showHand() << endl;
+   cout << "Jin's books are: " << Jin.showBooks() << endl;
+   cout << endl;
+
+
+// Jin's first turn
+   chosenCard = Jin.chooseCardFromHand();
+   cout << "Jin: Do you have a " << chosenCard.rankString(chosenCard.getRank()) << "?" << endl;
+   if (Andy.rankInHand(chosenCard) == true) {
+      cout << "Andy: Yes. I have a " << chosenCard.rankString(chosenCard.getRank()) << endl;
+
+      while (Andy.rankInHand(chosenCard) == true) { // keep checking if Andy's hand has specified rank
+         removedCard = Andy.removeCardFromHand(chosenCard);
+         Jin.addCard(removedCard);
+         cout << "Jin takes " << removedCard.toString() << " from Andy." << endl;
+         while (Jin.checkHandForBook(card1, card2) == true) {
+            Jin.bookCards(card1, card2);
+            cout << "Jin books " << card1.toString() << " and " << card2.toString() << endl;
+         }
+      }
+      cout << endl;
+   }
+   else {
+      cout << "Andy: Go Fish." << endl;
+      if (d.size() > 0) { // only draw if deck is not empty
+         drawnCard = d.dealCard();
+      }
+      else {
+         cout << "GAME OVER! (Deck is empty)." << endl;
+      }
+      
+      cout << "Jin draws a " << drawnCard.toString() << endl;
+      Jin.addCard(drawnCard);
+      while (Jin.checkHandForBook(card1, card2) == true) {
+            Jin.bookCards(card1, card2);
+            cout << "Jin books " << card1.toString() << " and " << card2.toString() << endl;
+      }
+      cout << endl;
+   }
+
+   cout << "Game updates after Jin's turn..." << endl;
+   cout << "Andy's hand is: " << Andy.showHand() << endl;
+   cout << "Andy's books are: " << Andy.showBooks() << endl;
+   cout << "Jin's hand is: " << Jin.showHand() << endl;
+   cout << "Jin's books are: " << Jin.showBooks() << endl;
+   cout << endl;
+
+   return 0;
 }
 /*
 int main( )
