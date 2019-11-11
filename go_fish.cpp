@@ -56,61 +56,93 @@ int main()
       //*** Andy's turn***
 
       //Andy asks
-      chosenCard = Andy.chooseCardFromHand();
-      myfile << "Andy: Do you have a " << chosenCard.rankString(chosenCard.getRank()) << "?" << endl;
-      while (Jin.rankInHand(chosenCard) == true) {//successful call
-         myfile << "Jin: Yes. I have a " << chosenCard.rankString(chosenCard.getRank()) << endl;
-
-         while (Jin.rankInHand(chosenCard) == true) { // keep checking for specified rank of chosen card in opponent's hand
-            removedCard = Jin.removeCardFromHand(chosenCard);
-            Andy.addCard(removedCard);
-            myfile << "Andy takes " << removedCard.toString() << " from Jin." << endl;
-            while (Andy.checkHandForBook(card1, card2) == true) {
-               Andy.bookCards(card1, card2);
-               myfile << "Andy books " << card1.toString() << " and " << card2.toString() << endl;
-            }   
+      if (Andy.getHandSize() == 0) { // handle edge case of empty hand
+         if (d.size() != 0) { // as long as deck is not empty
+            drawnCard = d.dealCard();
+            Andy.addCard(drawnCard);
+            myfile << "Andy's hand is empty so he draws from the top of the deck." << endl;
+            myfile << "Andy draws a " << drawnCard.toString() << "." << endl;
+            myfile << endl;
          }
-         myfile << endl;
-         
-         chosenCard = Andy.chooseCardFromHand();//Another turn
-         myfile << "Andy: Do you have a " << chosenCard.rankString(chosenCard.getRank()) << "?" << endl;
-      }
-      
-      myfile << "Jin: Go Fish." << endl;
-      if (d.size() > 0) { // as long as deck is not empty
-         drawnCard = d.dealCard();
-      }   
-      else {
-         myfile << "GAME OVER! (Deck is empty)." << endl;
-         
-         int p1_bs = Andy.getBookSize();
-         int p2_bs = Jin.getBookSize();
-   
-         myfile << Andy.getName() << " ends with " << p1_bs / 2 << " books!" << endl;
-         myfile << Jin.getName() << " ends with " << p2_bs / 2 << " books!" << endl;
-         myfile  << endl;
-  
-         if (p1_bs > p2_bs) {
-            myfile << Andy.getName() << " wins!" << endl;
-         }  
-         else if (p1_bs < p2_bs) {
-            myfile << Jin.getName() << " wins!" << endl; 
-         }   
-         else if (p1_bs == p2_bs) {
-            myfile << Andy.getName() << " and " << Jin.getName() << " draw!" << endl;   
-         }
+         else { // deck is empty so game is over
+            myfile << "GAME OVER! (Deck is empty)." << endl;
             
-         return 0;
-      } 
- 
-      myfile << "Andy draws a " << drawnCard.toString() << endl;
-      Andy.addCard(drawnCard);
-      while (Andy.checkHandForBook(card1, card2) == true) {
-        Andy.bookCards(card1, card2);
-        myfile << "Andy books " << card1.toString() << " and " << card2.toString() << endl;
-      } 
-      myfile << endl;
+            int p1_bs = Andy.getBookSize();
+            int p2_bs = Jin.getBookSize();
+      
+            myfile << Andy.getName() << " ends with " << p1_bs / 2 << " books!" << endl;
+            myfile << Jin.getName() << " ends with " << p2_bs / 2 << " books!" << endl;
+            myfile  << endl;
    
+            if (p1_bs > p2_bs) {
+               myfile << Andy.getName() << " wins!" << endl;
+            }  
+            else if (p1_bs < p2_bs) {
+               myfile << Jin.getName() << " wins!" << endl; 
+            }   
+            else if (p1_bs == p2_bs) {
+               myfile << Andy.getName() << " and " << Jin.getName() << " draw!" << endl;   
+            }
+               
+            return 0;
+         }
+      }
+      else { // runs as long as Andy's hand is not empty
+         chosenCard = Andy.chooseCardFromHand();
+         myfile << "Andy: Do you have a " << chosenCard.rankString(chosenCard.getRank()) << "?" << endl;
+         while (Jin.rankInHand(chosenCard) == true) {//successful call
+            myfile << "Jin: Yes. I have a " << chosenCard.rankString(chosenCard.getRank()) << endl;
+
+            while (Jin.rankInHand(chosenCard) == true) { // keep checking for specified rank of chosen card in opponent's hand
+               removedCard = Jin.removeCardFromHand(chosenCard);
+               Andy.addCard(removedCard);
+               myfile << "Andy takes " << removedCard.toString() << " from Jin." << endl;
+               while (Andy.checkHandForBook(card1, card2) == true) {
+                  Andy.bookCards(card1, card2);
+                  myfile << "Andy books " << card1.toString() << " and " << card2.toString() << endl;
+               }   
+            }
+            myfile << endl;
+            
+            chosenCard = Andy.chooseCardFromHand();//Another turn
+            myfile << "Andy: Do you have a " << chosenCard.rankString(chosenCard.getRank()) << "?" << endl;
+         }
+         
+         myfile << "Jin: Go Fish." << endl;
+         if (d.size() > 0) { // as long as deck is not empty
+            drawnCard = d.dealCard();
+         }   
+         else {
+            myfile << "GAME OVER! (Deck is empty)." << endl;
+            
+            int p1_bs = Andy.getBookSize();
+            int p2_bs = Jin.getBookSize();
+      
+            myfile << Andy.getName() << " ends with " << p1_bs / 2 << " books!" << endl;
+            myfile << Jin.getName() << " ends with " << p2_bs / 2 << " books!" << endl;
+            myfile  << endl;
+   
+            if (p1_bs > p2_bs) {
+               myfile << Andy.getName() << " wins!" << endl;
+            }  
+            else if (p1_bs < p2_bs) {
+               myfile << Jin.getName() << " wins!" << endl; 
+            }   
+            else if (p1_bs == p2_bs) {
+               myfile << Andy.getName() << " and " << Jin.getName() << " draw!" << endl;   
+            }
+               
+            return 0;
+         } 
+   
+         myfile << "Andy draws a " << drawnCard.toString() << endl;
+         Andy.addCard(drawnCard);
+         while (Andy.checkHandForBook(card1, card2) == true) {
+         Andy.bookCards(card1, card2);
+         myfile << "Andy books " << card1.toString() << " and " << card2.toString() << endl;
+         } 
+         myfile << endl;
+      }
 
       myfile << "Game updates after Andy's turn..." << endl;
       myfile << "Andy's hand is: " << Andy.showHand() << endl;
@@ -123,59 +155,92 @@ int main()
       //***Jin's turn***
       
       //Jin asks
-      chosenCard = Jin.chooseCardFromHand();
-      myfile << "Jin: Do you have a " << chosenCard.rankString(chosenCard.getRank()) << "?" << endl;
-      while (Andy.rankInHand(chosenCard) == true) {
-         myfile << "Andy: Yes. I have a " << chosenCard.rankString(chosenCard.getRank()) << endl;
-
-         while (Andy.rankInHand(chosenCard) == true) { // keep checking if Andy's hand has specified rank
-            removedCard = Andy.removeCardFromHand(chosenCard);
-            Jin.addCard(removedCard);
-            myfile << "Jin takes " << removedCard.toString() << " from Andy." << endl;
-            while (Jin.checkHandForBook(card1, card2) == true) {
-               Jin.bookCards(card1, card2);
-               myfile << "Jin books " << card1.toString() << " and " << card2.toString() << endl;
-            }
-         } 
-         myfile << endl;
-  
-         chosenCard = Jin.chooseCardFromHand();//Another turn
-         myfile << "Jin: Do you have a " << chosenCard.rankString(chosenCard.getRank()) << "?" << endl;
-      } 
+      if (Jin.getHandSize() == 0) { // handle edge case of empty hand
+         if (d.size() != 0) {
+            drawnCard = d.dealCard();
+            Jin.addCard(drawnCard);
+            myfile << "Jin's hand is empty so he draws from the top of the deck." << endl;
+            myfile << "Jin draws a " << drawnCard.toString() << "." << endl;
+            myfile << endl;
+         }
+         else { // deck is empty
+            myfile << "GAME OVER! (Deck is empty)." << endl;
+            
+            int p1_bs = Andy.getBookSize();
+            int p2_bs = Jin.getBookSize();
       
-      myfile << "Andy: Go Fish." << endl;
-      if (d.size() > 0) { // only draw if deck is not empty
-         drawnCard = d.dealCard();
+            myfile << Andy.getName() << " ends with " << p1_bs / 2 << " books!" << endl;
+            myfile << Jin.getName() << " ends with " << p2_bs / 2 << " books!" << endl;
+            myfile  << endl;
+   
+            if (p1_bs > p2_bs) {
+               myfile << Andy.getName() << " wins!" << endl;
+            }  
+            else if (p1_bs < p2_bs) {
+               myfile << Jin.getName() << " wins!" << endl; 
+            }   
+            else if (p1_bs == p2_bs) {
+               myfile << Andy.getName() << " and " << Jin.getName() << " draw!" << endl;   
+            }
+               
+            return 0;
+         }
       }
       else {
-         myfile << "GAME OVER! (Deck is empty)." << endl;
-          
-         int p1_bs = Andy.getBookSize();
-         int p2_bs = Jin.getBookSize();
+         chosenCard = Jin.chooseCardFromHand();
+         myfile << "Jin: Do you have a " << chosenCard.rankString(chosenCard.getRank()) << "?" << endl;
+         while (Andy.rankInHand(chosenCard) == true) {
+            myfile << "Andy: Yes. I have a " << chosenCard.rankString(chosenCard.getRank()) << endl;
+
+            while (Andy.rankInHand(chosenCard) == true) { // keep checking if Andy's hand has specified rank
+               removedCard = Andy.removeCardFromHand(chosenCard);
+               Jin.addCard(removedCard);
+               myfile << "Jin takes " << removedCard.toString() << " from Andy." << endl;
+               while (Jin.checkHandForBook(card1, card2) == true) {
+                  Jin.bookCards(card1, card2);
+                  myfile << "Jin books " << card1.toString() << " and " << card2.toString() << endl;
+               }
+            } 
+            myfile << endl;
    
-         myfile << Andy.getName() << " ends with " << p1_bs / 2 << " books!" << endl;
-         myfile << Jin.getName() << " ends with " << p2_bs / 2 << " books!" << endl;
-         myfile  << endl;
-  
-         if (p1_bs > p2_bs) {
-            myfile << Andy.getName() << " wins!" << endl;
-         }  
-         else if (p1_bs < p2_bs) {
-            myfile << Jin.getName() << " wins!" << endl; 
+            chosenCard = Jin.chooseCardFromHand();//Another turn
+            myfile << "Jin: Do you have a " << chosenCard.rankString(chosenCard.getRank()) << "?" << endl;
+         } 
+         
+         myfile << "Andy: Go Fish." << endl;
+         if (d.size() > 0) { // only draw if deck is not empty
+            drawnCard = d.dealCard();
          }
-         else if (p1_bs == p2_bs) {
-            myfile << Andy.getName() << " and " << Jin.getName() << " draw!" << endl;   
-         }
-         return 0;
-      } 
+         else {
+            myfile << "GAME OVER! (Deck is empty)." << endl;
+            
+            int p1_bs = Andy.getBookSize();
+            int p2_bs = Jin.getBookSize();
       
-      myfile << "Jin draws a " << drawnCard.toString() << endl;
-      Jin.addCard(drawnCard);
-      while (Jin.checkHandForBook(card1, card2) == true) {
-         Jin.bookCards(card1, card2);
-         myfile << "Jin books " << card1.toString() << " and " << card2.toString() << endl;
+            myfile << Andy.getName() << " ends with " << p1_bs / 2 << " books!" << endl;
+            myfile << Jin.getName() << " ends with " << p2_bs / 2 << " books!" << endl;
+            myfile  << endl;
+   
+            if (p1_bs > p2_bs) {
+               myfile << Andy.getName() << " wins!" << endl;
+            }  
+            else if (p1_bs < p2_bs) {
+               myfile << Jin.getName() << " wins!" << endl; 
+            }
+            else if (p1_bs == p2_bs) {
+               myfile << Andy.getName() << " and " << Jin.getName() << " draw!" << endl;   
+            }
+            return 0;
+         } 
+         
+         myfile << "Jin draws a " << drawnCard.toString() << endl;
+         Jin.addCard(drawnCard);
+         while (Jin.checkHandForBook(card1, card2) == true) {
+            Jin.bookCards(card1, card2);
+            myfile << "Jin books " << card1.toString() << " and " << card2.toString() << endl;
+         }
+         myfile << endl;
       }
-      myfile << endl;
       
 
       myfile << "Game updates after Jin's turn..." << endl;
