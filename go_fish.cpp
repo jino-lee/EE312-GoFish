@@ -103,7 +103,30 @@ int main()
                }   
             }
             myfile << endl;
+          
+            if (d.size() <= 0) {//check deck size
+               myfile << "GAME OVER! (Deck is empty)." << endl;
             
+               int p1_bs = Andy.getBookSize();
+               int p2_bs = Jin.getBookSize();
+      
+               myfile << Andy.getName() << " ends with " << p1_bs / 2 << " books!" << endl;
+               myfile << Jin.getName() << " ends with " << p2_bs / 2 << " books!" << endl;
+               myfile  << endl;
+   
+               if (p1_bs > p2_bs) {
+                  myfile << Andy.getName() << " wins!" << endl;
+               }  
+               else if (p1_bs < p2_bs) {
+                  myfile << Jin.getName() << " wins!" << endl; 
+               }   
+               else if (p1_bs == p2_bs) {
+                  myfile << Andy.getName() << " and " << Jin.getName() << " draw!" << endl;   
+               }
+               
+               return 0;
+            }  
+
             chosenCard = Andy.chooseCardFromHand();//Another turn
             myfile << "Andy: Do you have a " << chosenCard.rankString(chosenCard.getRank()) << "?" << endl;
          }
@@ -202,7 +225,30 @@ int main()
                }
             } 
             myfile << endl;
+            
+            if (d.size() <= 0) {//check deck size    
+               myfile << "GAME OVER! (Deck is empty)." << endl;
+            
+               int p1_bs = Andy.getBookSize();
+               int p2_bs = Jin.getBookSize();
+      
+               myfile << Andy.getName() << " ends with " << p1_bs / 2 << " books!" << endl;
+               myfile << Jin.getName() << " ends with " << p2_bs / 2 << " books!" << endl;
+               myfile  << endl;
    
+               if (p1_bs > p2_bs) {
+                  myfile << Andy.getName() << " wins!" << endl;
+               }  
+               else if (p1_bs < p2_bs) {
+                  myfile << Jin.getName() << " wins!" << endl; 
+               }   
+               else if (p1_bs == p2_bs) {
+                  myfile << Andy.getName() << " and " << Jin.getName() << " draw!" << endl;   
+               }
+               
+               return 0;
+            }
+
             chosenCard = Jin.chooseCardFromHand();//Another turn
             myfile << "Jin: Do you have a " << chosenCard.rankString(chosenCard.getRank()) << "?" << endl;
          } 

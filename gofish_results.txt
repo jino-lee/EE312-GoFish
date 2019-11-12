@@ -3,466 +3,463 @@ Now playing Go Fish...
 First player's name is: Andy
 Second player's name is: Jin
 Dealing cards...
-Andy's hand is: 2h 6h Qc Ah 7s Kc 4s
-Jin's hand is: 3s Qd 7h 9s Jc 3c 10c
-Andy: Do you have a 2?
+Andy's hand is: Ah 5d Kd Kc Kh Qs 4d
+Jin's hand is: Jh 6s 7d 6d 8s 5c 9h
+Andy: Do you have a A?
 Jin: Go Fish.
-Andy draws a Jh
+Andy draws a 2h
+Andy books Kd and Kc
 
 Game updates after Andy's turn...
-Andy's hand is: 2h 6h Qc Ah 7s Kc 4s Jh
-Andy's books are: 
-Jin's hand is: 3s Qd 7h 9s Jc 3c 10c
+Andy's hand is: Ah 5d Kh Qs 4d 2h
+Andy's books are: Kd Kc
+Jin's hand is: Jh 6s 7d 6d 8s 5c 9h
 Jin's books are: 
 
-Jin: Do you have a Q?
-Andy: Yes. I have a Q
-Jin takes Qc from Andy.
-Jin books Qd and Qc
-Jin books 3s and 3c
+Jin: Do you have a J?
+Andy: Go Fish.
+Jin draws a 7c
+Jin books 7d and 7c
+Jin books 6s and 6d
 
-Jin: Do you have a 7?
-Andy: Yes. I have a 7
-Jin takes 7s from Andy.
-Jin books 7h and 7s
+Game updates after Jin's turn...
+Andy's hand is: Ah 5d Kh Qs 4d 2h
+Andy's books are: Kd Kc
+Jin's hand is: Jh 8s 5c 9h
+Jin's books are: 7d 7c 6s 6d
+
+Andy: Do you have a A?
+Jin: Go Fish.
+Andy draws a 8d
+
+Game updates after Andy's turn...
+Andy's hand is: Ah 5d Kh Qs 4d 2h 8d
+Andy's books are: Kd Kc
+Jin's hand is: Jh 8s 5c 9h
+Jin's books are: 7d 7c 6s 6d
+
+Jin: Do you have a J?
+Andy: Go Fish.
+Jin draws a 10c
+
+Game updates after Jin's turn...
+Andy's hand is: Ah 5d Kh Qs 4d 2h 8d
+Andy's books are: Kd Kc
+Jin's hand is: Jh 8s 5c 9h 10c
+Jin's books are: 7d 7c 6s 6d
+
+Andy: Do you have a A?
+Jin: Go Fish.
+Andy draws a Jc
+
+Game updates after Andy's turn...
+Andy's hand is: Ah 5d Kh Qs 4d 2h 8d Jc
+Andy's books are: Kd Kc
+Jin's hand is: Jh 8s 5c 9h 10c
+Jin's books are: 7d 7c 6s 6d
+
+Jin: Do you have a J?
+Andy: Yes. I have a J
+Jin takes Jc from Andy.
+Jin books Jh and Jc
+
+Jin: Do you have a 8?
+Andy: Yes. I have a 8
+Jin takes 8d from Andy.
+Jin books 8s and 8d
+
+Jin: Do you have a 5?
+Andy: Yes. I have a 5
+Jin takes 5d from Andy.
+Jin books 5c and 5d
 
 Jin: Do you have a 9?
 Andy: Go Fish.
-Jin draws a 9d
-Jin books 9s and 9d
+Jin draws a 5h
 
 Game updates after Jin's turn...
-Andy's hand is: 2h 6h Ah Kc 4s Jh
-Andy's books are: 
-Jin's hand is: Jc 10c
-Jin's books are: Qd Qc 3s 3c 7h 7s 9s 9d
+Andy's hand is: Ah Kh Qs 4d 2h
+Andy's books are: Kd Kc
+Jin's hand is: 9h 10c 5h
+Jin's books are: 7d 7c 6s 6d Jh Jc 8s 8d 5c 5d
 
-Andy: Do you have a 2?
+Andy: Do you have a A?
+Jin: Go Fish.
+Andy draws a 3h
+
+Game updates after Andy's turn...
+Andy's hand is: Ah Kh Qs 4d 2h 3h
+Andy's books are: Kd Kc
+Jin's hand is: 9h 10c 5h
+Jin's books are: 7d 7c 6s 6d Jh Jc 8s 8d 5c 5d
+
+Jin: Do you have a 9?
+Andy: Go Fish.
+Jin draws a 6h
+
+Game updates after Jin's turn...
+Andy's hand is: Ah Kh Qs 4d 2h 3h
+Andy's books are: Kd Kc
+Jin's hand is: 9h 10c 5h 6h
+Jin's books are: 7d 7c 6s 6d Jh Jc 8s 8d 5c 5d
+
+Andy: Do you have a A?
 Jin: Go Fish.
 Andy draws a As
 Andy books Ah and As
 
 Game updates after Andy's turn...
-Andy's hand is: 2h 6h Kc 4s Jh
-Andy's books are: Ah As
-Jin's hand is: Jc 10c
-Jin's books are: Qd Qc 3s 3c 7h 7s 9s 9d
+Andy's hand is: Kh Qs 4d 2h 3h
+Andy's books are: Kd Kc Ah As
+Jin's hand is: 9h 10c 5h 6h
+Jin's books are: 7d 7c 6s 6d Jh Jc 8s 8d 5c 5d
 
-Jin: Do you have a J?
-Andy: Yes. I have a J
-Jin takes Jh from Andy.
-Jin books Jc and Jh
-
-Jin: Do you have a 10?
+Jin: Do you have a 9?
 Andy: Go Fish.
-Jin draws a Ac
+Jin draws a 9s
+Jin books 9h and 9s
 
 Game updates after Jin's turn...
-Andy's hand is: 2h 6h Kc 4s
-Andy's books are: Ah As
-Jin's hand is: 10c Ac
-Jin's books are: Qd Qc 3s 3c 7h 7s 9s 9d Jc Jh
+Andy's hand is: Kh Qs 4d 2h 3h
+Andy's books are: Kd Kc Ah As
+Jin's hand is: 10c 5h 6h
+Jin's books are: 7d 7c 6s 6d Jh Jc 8s 8d 5c 5d 9h 9s
 
-Andy: Do you have a 2?
-Jin: Go Fish.
-Andy draws a 4h
-Andy books 4s and 4h
-
-Game updates after Andy's turn...
-Andy's hand is: 2h 6h Kc
-Andy's books are: Ah As 4s 4h
-Jin's hand is: 10c Ac
-Jin's books are: Qd Qc 3s 3c 7h 7s 9s 9d Jc Jh
-
-Jin: Do you have a 10?
-Andy: Go Fish.
-Jin draws a 6s
-
-Game updates after Jin's turn...
-Andy's hand is: 2h 6h Kc
-Andy's books are: Ah As 4s 4h
-Jin's hand is: 10c Ac 6s
-Jin's books are: Qd Qc 3s 3c 7h 7s 9s 9d Jc Jh
-
-Andy: Do you have a 2?
-Jin: Go Fish.
-Andy draws a 6c
-Andy books 6h and 6c
-
-Game updates after Andy's turn...
-Andy's hand is: 2h Kc
-Andy's books are: Ah As 4s 4h 6h 6c
-Jin's hand is: 10c Ac 6s
-Jin's books are: Qd Qc 3s 3c 7h 7s 9s 9d Jc Jh
-
-Jin: Do you have a 10?
-Andy: Go Fish.
-Jin draws a 10s
-Jin books 10c and 10s
-
-Game updates after Jin's turn...
-Andy's hand is: 2h Kc
-Andy's books are: Ah As 4s 4h 6h 6c
-Jin's hand is: Ac 6s
-Jin's books are: Qd Qc 3s 3c 7h 7s 9s 9d Jc Jh 10c 10s
-
-Andy: Do you have a 2?
-Jin: Go Fish.
-Andy draws a Ks
-Andy books Kc and Ks
-
-Game updates after Andy's turn...
-Andy's hand is: 2h
-Andy's books are: Ah As 4s 4h 6h 6c Kc Ks
-Jin's hand is: Ac 6s
-Jin's books are: Qd Qc 3s 3c 7h 7s 9s 9d Jc Jh 10c 10s
-
-Jin: Do you have a A?
-Andy: Go Fish.
-Jin draws a 7d
-
-Game updates after Jin's turn...
-Andy's hand is: 2h
-Andy's books are: Ah As 4s 4h 6h 6c Kc Ks
-Jin's hand is: Ac 6s 7d
-Jin's books are: Qd Qc 3s 3c 7h 7s 9s 9d Jc Jh 10c 10s
-
-Andy: Do you have a 2?
-Jin: Go Fish.
-Andy draws a 2s
-Andy books 2h and 2s
-
-Game updates after Andy's turn...
-Andy's hand is: 
-Andy's books are: Ah As 4s 4h 6h 6c Kc Ks 2h 2s
-Jin's hand is: Ac 6s 7d
-Jin's books are: Qd Qc 3s 3c 7h 7s 9s 9d Jc Jh 10c 10s
-
-Jin: Do you have a A?
-Andy: Go Fish.
-Jin draws a 2c
-
-Game updates after Jin's turn...
-Andy's hand is: 
-Andy's books are: Ah As 4s 4h 6h 6c Kc Ks 2h 2s
-Jin's hand is: Ac 6s 7d 2c
-Jin's books are: Qd Qc 3s 3c 7h 7s 9s 9d Jc Jh 10c 10s
-
-Andy: Do you have a 2?
-Jin: Yes. I have a 2
-Andy takes 2c from Jin.
-
-Andy: Do you have a 2?
-Jin: Go Fish.
-Andy draws a 7c
-
-Game updates after Andy's turn...
-Andy's hand is: 2c 7c
-Andy's books are: Ah As 4s 4h 6h 6c Kc Ks 2h 2s
-Jin's hand is: Ac 6s 7d
-Jin's books are: Qd Qc 3s 3c 7h 7s 9s 9d Jc Jh 10c 10s
-
-Jin: Do you have a A?
-Andy: Go Fish.
-Jin draws a 5d
-
-Game updates after Jin's turn...
-Andy's hand is: 2c 7c
-Andy's books are: Ah As 4s 4h 6h 6c Kc Ks 2h 2s
-Jin's hand is: Ac 6s 7d 5d
-Jin's books are: Qd Qc 3s 3c 7h 7s 9s 9d Jc Jh 10c 10s
-
-Andy: Do you have a 7?
-Jin: Yes. I have a 7
-Andy takes 7d from Jin.
-Andy books 7c and 7d
-
-Andy: Do you have a 2?
-Jin: Go Fish.
-Andy draws a 5s
-
-Game updates after Andy's turn...
-Andy's hand is: 2c 5s
-Andy's books are: Ah As 4s 4h 6h 6c Kc Ks 2h 2s 7c 7d
-Jin's hand is: Ac 6s 5d
-Jin's books are: Qd Qc 3s 3c 7h 7s 9s 9d Jc Jh 10c 10s
-
-Jin: Do you have a A?
-Andy: Go Fish.
-Jin draws a Kd
-
-Game updates after Jin's turn...
-Andy's hand is: 2c 5s
-Andy's books are: Ah As 4s 4h 6h 6c Kc Ks 2h 2s 7c 7d
-Jin's hand is: Ac 6s 5d Kd
-Jin's books are: Qd Qc 3s 3c 7h 7s 9s 9d Jc Jh 10c 10s
-
-Andy: Do you have a 5?
-Jin: Yes. I have a 5
-Andy takes 5d from Jin.
-Andy books 5s and 5d
-
-Andy: Do you have a 2?
-Jin: Go Fish.
-Andy draws a 4d
-
-Game updates after Andy's turn...
-Andy's hand is: 2c 4d
-Andy's books are: Ah As 4s 4h 6h 6c Kc Ks 2h 2s 7c 7d 5s 5d
-Jin's hand is: Ac 6s Kd
-Jin's books are: Qd Qc 3s 3c 7h 7s 9s 9d Jc Jh 10c 10s
-
-Jin: Do you have a A?
-Andy: Go Fish.
-Jin draws a Kh
-Jin books Kd and Kh
-
-Game updates after Jin's turn...
-Andy's hand is: 2c 4d
-Andy's books are: Ah As 4s 4h 6h 6c Kc Ks 2h 2s 7c 7d 5s 5d
-Jin's hand is: Ac 6s
-Jin's books are: Qd Qc 3s 3c 7h 7s 9s 9d Jc Jh 10c 10s Kd Kh
-
-Andy: Do you have a 2?
-Jin: Go Fish.
-Andy draws a 3h
-
-Game updates after Andy's turn...
-Andy's hand is: 2c 4d 3h
-Andy's books are: Ah As 4s 4h 6h 6c Kc Ks 2h 2s 7c 7d 5s 5d
-Jin's hand is: Ac 6s
-Jin's books are: Qd Qc 3s 3c 7h 7s 9s 9d Jc Jh 10c 10s Kd Kh
-
-Jin: Do you have a A?
-Andy: Go Fish.
-Jin draws a 5c
-
-Game updates after Jin's turn...
-Andy's hand is: 2c 4d 3h
-Andy's books are: Ah As 4s 4h 6h 6c Kc Ks 2h 2s 7c 7d 5s 5d
-Jin's hand is: Ac 6s 5c
-Jin's books are: Qd Qc 3s 3c 7h 7s 9s 9d Jc Jh 10c 10s Kd Kh
-
-Andy: Do you have a 3?
-Jin: Go Fish.
-Andy draws a 9h
-
-Game updates after Andy's turn...
-Andy's hand is: 2c 4d 3h 9h
-Andy's books are: Ah As 4s 4h 6h 6c Kc Ks 2h 2s 7c 7d 5s 5d
-Jin's hand is: Ac 6s 5c
-Jin's books are: Qd Qc 3s 3c 7h 7s 9s 9d Jc Jh 10c 10s Kd Kh
-
-Jin: Do you have a A?
-Andy: Go Fish.
-Jin draws a Qh
-
-Game updates after Jin's turn...
-Andy's hand is: 2c 4d 3h 9h
-Andy's books are: Ah As 4s 4h 6h 6c Kc Ks 2h 2s 7c 7d 5s 5d
-Jin's hand is: Ac 6s 5c Qh
-Jin's books are: Qd Qc 3s 3c 7h 7s 9s 9d Jc Jh 10c 10s Kd Kh
-
-Andy: Do you have a 3?
-Jin: Go Fish.
-Andy draws a 9c
-Andy books 9h and 9c
-
-Game updates after Andy's turn...
-Andy's hand is: 2c 4d 3h
-Andy's books are: Ah As 4s 4h 6h 6c Kc Ks 2h 2s 7c 7d 5s 5d 9h 9c
-Jin's hand is: Ac 6s 5c Qh
-Jin's books are: Qd Qc 3s 3c 7h 7s 9s 9d Jc Jh 10c 10s Kd Kh
-
-Jin: Do you have a A?
-Andy: Go Fish.
-Jin draws a Qs
-Jin books Qh and Qs
-
-Game updates after Jin's turn...
-Andy's hand is: 2c 4d 3h
-Andy's books are: Ah As 4s 4h 6h 6c Kc Ks 2h 2s 7c 7d 5s 5d 9h 9c
-Jin's hand is: Ac 6s 5c
-Jin's books are: Qd Qc 3s 3c 7h 7s 9s 9d Jc Jh 10c 10s Kd Kh Qh Qs
-
-Andy: Do you have a 3?
-Jin: Go Fish.
-Andy draws a 4c
-Andy books 4d and 4c
-
-Game updates after Andy's turn...
-Andy's hand is: 2c 3h
-Andy's books are: Ah As 4s 4h 6h 6c Kc Ks 2h 2s 7c 7d 5s 5d 9h 9c 4d 4c
-Jin's hand is: Ac 6s 5c
-Jin's books are: Qd Qc 3s 3c 7h 7s 9s 9d Jc Jh 10c 10s Kd Kh Qh Qs
-
-Jin: Do you have a A?
-Andy: Go Fish.
-Jin draws a Jd
-
-Game updates after Jin's turn...
-Andy's hand is: 2c 3h
-Andy's books are: Ah As 4s 4h 6h 6c Kc Ks 2h 2s 7c 7d 5s 5d 9h 9c 4d 4c
-Jin's hand is: Ac 6s 5c Jd
-Jin's books are: Qd Qc 3s 3c 7h 7s 9s 9d Jc Jh 10c 10s Kd Kh Qh Qs
-
-Andy: Do you have a 3?
-Jin: Go Fish.
-Andy draws a 8s
-
-Game updates after Andy's turn...
-Andy's hand is: 2c 3h 8s
-Andy's books are: Ah As 4s 4h 6h 6c Kc Ks 2h 2s 7c 7d 5s 5d 9h 9c 4d 4c
-Jin's hand is: Ac 6s 5c Jd
-Jin's books are: Qd Qc 3s 3c 7h 7s 9s 9d Jc Jh 10c 10s Kd Kh Qh Qs
-
-Jin: Do you have a A?
-Andy: Go Fish.
-Jin draws a 8c
-
-Game updates after Jin's turn...
-Andy's hand is: 2c 3h 8s
-Andy's books are: Ah As 4s 4h 6h 6c Kc Ks 2h 2s 7c 7d 5s 5d 9h 9c 4d 4c
-Jin's hand is: Ac 6s 5c Jd 8c
-Jin's books are: Qd Qc 3s 3c 7h 7s 9s 9d Jc Jh 10c 10s Kd Kh Qh Qs
-
-Andy: Do you have a 3?
-Jin: Go Fish.
-Andy draws a 6d
-
-Game updates after Andy's turn...
-Andy's hand is: 2c 3h 8s 6d
-Andy's books are: Ah As 4s 4h 6h 6c Kc Ks 2h 2s 7c 7d 5s 5d 9h 9c 4d 4c
-Jin's hand is: Ac 6s 5c Jd 8c
-Jin's books are: Qd Qc 3s 3c 7h 7s 9s 9d Jc Jh 10c 10s Kd Kh Qh Qs
-
-Jin: Do you have a A?
-Andy: Go Fish.
-Jin draws a 2d
-
-Game updates after Jin's turn...
-Andy's hand is: 2c 3h 8s 6d
-Andy's books are: Ah As 4s 4h 6h 6c Kc Ks 2h 2s 7c 7d 5s 5d 9h 9c 4d 4c
-Jin's hand is: Ac 6s 5c Jd 8c 2d
-Jin's books are: Qd Qc 3s 3c 7h 7s 9s 9d Jc Jh 10c 10s Kd Kh Qh Qs
-
-Andy: Do you have a 3?
+Andy: Do you have a Q?
 Jin: Go Fish.
 Andy draws a 3d
 Andy books 3h and 3d
 
 Game updates after Andy's turn...
-Andy's hand is: 2c 8s 6d
-Andy's books are: Ah As 4s 4h 6h 6c Kc Ks 2h 2s 7c 7d 5s 5d 9h 9c 4d 4c 3h 3d
-Jin's hand is: Ac 6s 5c Jd 8c 2d
-Jin's books are: Qd Qc 3s 3c 7h 7s 9s 9d Jc Jh 10c 10s Kd Kh Qh Qs
+Andy's hand is: Kh Qs 4d 2h
+Andy's books are: Kd Kc Ah As 3h 3d
+Jin's hand is: 10c 5h 6h
+Jin's books are: 7d 7c 6s 6d Jh Jc 8s 8d 5c 5d 9h 9s
 
-Jin: Do you have a A?
-Andy: Go Fish.
-Jin draws a Ad
-Jin books Ac and Ad
-
-Game updates after Jin's turn...
-Andy's hand is: 2c 8s 6d
-Andy's books are: Ah As 4s 4h 6h 6c Kc Ks 2h 2s 7c 7d 5s 5d 9h 9c 4d 4c 3h 3d
-Jin's hand is: 6s 5c Jd 8c 2d
-Jin's books are: Qd Qc 3s 3c 7h 7s 9s 9d Jc Jh 10c 10s Kd Kh Qh Qs Ac Ad
-
-Andy: Do you have a 8?
-Jin: Yes. I have a 8
-Andy takes 8c from Jin.
-Andy books 8s and 8c
-
-Andy: Do you have a 2?
-Jin: Yes. I have a 2
-Andy takes 2d from Jin.
-Andy books 2c and 2d
-
-Andy: Do you have a 6?
-Jin: Yes. I have a 6
-Andy takes 6s from Jin.
-Andy books 6d and 6s
-
-Andy: Do you have a 6?
-Jin: Go Fish.
-Andy draws a 10d
-
-Game updates after Andy's turn...
-Andy's hand is: 10d
-Andy's books are: Ah As 4s 4h 6h 6c Kc Ks 2h 2s 7c 7d 5s 5d 9h 9c 4d 4c 3h 3d 8s 8c 2c 2d 6d 6s
-Jin's hand is: 5c Jd
-Jin's books are: Qd Qc 3s 3c 7h 7s 9s 9d Jc Jh 10c 10s Kd Kh Qh Qs Ac Ad
-
-Jin: Do you have a 5?
-Andy: Go Fish.
-Jin draws a Js
-Jin books Jd and Js
-
-Game updates after Jin's turn...
-Andy's hand is: 10d
-Andy's books are: Ah As 4s 4h 6h 6c Kc Ks 2h 2s 7c 7d 5s 5d 9h 9c 4d 4c 3h 3d 8s 8c 2c 2d 6d 6s
-Jin's hand is: 5c
-Jin's books are: Qd Qc 3s 3c 7h 7s 9s 9d Jc Jh 10c 10s Kd Kh Qh Qs Ac Ad Jd Js
-
-Andy: Do you have a 10?
-Jin: Go Fish.
-Andy draws a 8h
-
-Game updates after Andy's turn...
-Andy's hand is: 10d 8h
-Andy's books are: Ah As 4s 4h 6h 6c Kc Ks 2h 2s 7c 7d 5s 5d 9h 9c 4d 4c 3h 3d 8s 8c 2c 2d 6d 6s
-Jin's hand is: 5c
-Jin's books are: Qd Qc 3s 3c 7h 7s 9s 9d Jc Jh 10c 10s Kd Kh Qh Qs Ac Ad Jd Js
-
-Jin: Do you have a 5?
+Jin: Do you have a 10?
 Andy: Go Fish.
 Jin draws a 10h
+Jin books 10c and 10h
 
 Game updates after Jin's turn...
-Andy's hand is: 10d 8h
-Andy's books are: Ah As 4s 4h 6h 6c Kc Ks 2h 2s 7c 7d 5s 5d 9h 9c 4d 4c 3h 3d 8s 8c 2c 2d 6d 6s
-Jin's hand is: 5c 10h
-Jin's books are: Qd Qc 3s 3c 7h 7s 9s 9d Jc Jh 10c 10s Kd Kh Qh Qs Ac Ad Jd Js
+Andy's hand is: Kh Qs 4d 2h
+Andy's books are: Kd Kc Ah As 3h 3d
+Jin's hand is: 5h 6h
+Jin's books are: 7d 7c 6s 6d Jh Jc 8s 8d 5c 5d 9h 9s 10c 10h
 
-Andy: Do you have a 10?
-Jin: Yes. I have a 10
-Andy takes 10h from Jin.
-Andy books 10d and 10h
+Andy: Do you have a Q?
+Jin: Go Fish.
+Andy draws a 2s
+Andy books 2h and 2s
+
+Game updates after Andy's turn...
+Andy's hand is: Kh Qs 4d
+Andy's books are: Kd Kc Ah As 3h 3d 2h 2s
+Jin's hand is: 5h 6h
+Jin's books are: 7d 7c 6s 6d Jh Jc 8s 8d 5c 5d 9h 9s 10c 10h
+
+Jin: Do you have a 5?
+Andy: Go Fish.
+Jin draws a Qd
+
+Game updates after Jin's turn...
+Andy's hand is: Kh Qs 4d
+Andy's books are: Kd Kc Ah As 3h 3d 2h 2s
+Jin's hand is: 5h 6h Qd
+Jin's books are: 7d 7c 6s 6d Jh Jc 8s 8d 5c 5d 9h 9s 10c 10h
+
+Andy: Do you have a Q?
+Jin: Yes. I have a Q
+Andy takes Qd from Jin.
+Andy books Qs and Qd
+
+Andy: Do you have a 4?
+Jin: Go Fish.
+Andy draws a Jd
+
+Game updates after Andy's turn...
+Andy's hand is: Kh 4d Jd
+Andy's books are: Kd Kc Ah As 3h 3d 2h 2s Qs Qd
+Jin's hand is: 5h 6h
+Jin's books are: 7d 7c 6s 6d Jh Jc 8s 8d 5c 5d 9h 9s 10c 10h
+
+Jin: Do you have a 5?
+Andy: Go Fish.
+Jin draws a 4c
+
+Game updates after Jin's turn...
+Andy's hand is: Kh 4d Jd
+Andy's books are: Kd Kc Ah As 3h 3d 2h 2s Qs Qd
+Jin's hand is: 5h 6h 4c
+Jin's books are: 7d 7c 6s 6d Jh Jc 8s 8d 5c 5d 9h 9s 10c 10h
+
+Andy: Do you have a 4?
+Jin: Yes. I have a 4
+Andy takes 4c from Jin.
+Andy books 4d and 4c
+
+Andy: Do you have a J?
+Jin: Go Fish.
+Andy draws a Ac
+
+Game updates after Andy's turn...
+Andy's hand is: Kh Jd Ac
+Andy's books are: Kd Kc Ah As 3h 3d 2h 2s Qs Qd 4d 4c
+Jin's hand is: 5h 6h
+Jin's books are: 7d 7c 6s 6d Jh Jc 8s 8d 5c 5d 9h 9s 10c 10h
+
+Jin: Do you have a 5?
+Andy: Go Fish.
+Jin draws a 3s
+
+Game updates after Jin's turn...
+Andy's hand is: Kh Jd Ac
+Andy's books are: Kd Kc Ah As 3h 3d 2h 2s Qs Qd 4d 4c
+Jin's hand is: 5h 6h 3s
+Jin's books are: 7d 7c 6s 6d Jh Jc 8s 8d 5c 5d 9h 9s 10c 10h
+
+Andy: Do you have a J?
+Jin: Go Fish.
+Andy draws a 2c
+
+Game updates after Andy's turn...
+Andy's hand is: Kh Jd Ac 2c
+Andy's books are: Kd Kc Ah As 3h 3d 2h 2s Qs Qd 4d 4c
+Jin's hand is: 5h 6h 3s
+Jin's books are: 7d 7c 6s 6d Jh Jc 8s 8d 5c 5d 9h 9s 10c 10h
+
+Jin: Do you have a 3?
+Andy: Go Fish.
+Jin draws a 10s
+
+Game updates after Jin's turn...
+Andy's hand is: Kh Jd Ac 2c
+Andy's books are: Kd Kc Ah As 3h 3d 2h 2s Qs Qd 4d 4c
+Jin's hand is: 5h 6h 3s 10s
+Jin's books are: 7d 7c 6s 6d Jh Jc 8s 8d 5c 5d 9h 9s 10c 10h
+
+Andy: Do you have a J?
+Jin: Go Fish.
+Andy draws a 4s
+
+Game updates after Andy's turn...
+Andy's hand is: Kh Jd Ac 2c 4s
+Andy's books are: Kd Kc Ah As 3h 3d 2h 2s Qs Qd 4d 4c
+Jin's hand is: 5h 6h 3s 10s
+Jin's books are: 7d 7c 6s 6d Jh Jc 8s 8d 5c 5d 9h 9s 10c 10h
+
+Jin: Do you have a 3?
+Andy: Go Fish.
+Jin draws a Ad
+
+Game updates after Jin's turn...
+Andy's hand is: Kh Jd Ac 2c 4s
+Andy's books are: Kd Kc Ah As 3h 3d 2h 2s Qs Qd 4d 4c
+Jin's hand is: 5h 6h 3s 10s Ad
+Jin's books are: 7d 7c 6s 6d Jh Jc 8s 8d 5c 5d 9h 9s 10c 10h
+
+Andy: Do you have a J?
+Jin: Go Fish.
+Andy draws a Qc
+
+Game updates after Andy's turn...
+Andy's hand is: Kh Jd Ac 2c 4s Qc
+Andy's books are: Kd Kc Ah As 3h 3d 2h 2s Qs Qd 4d 4c
+Jin's hand is: 5h 6h 3s 10s Ad
+Jin's books are: 7d 7c 6s 6d Jh Jc 8s 8d 5c 5d 9h 9s 10c 10h
+
+Jin: Do you have a 3?
+Andy: Go Fish.
+Jin draws a Js
+
+Game updates after Jin's turn...
+Andy's hand is: Kh Jd Ac 2c 4s Qc
+Andy's books are: Kd Kc Ah As 3h 3d 2h 2s Qs Qd 4d 4c
+Jin's hand is: 5h 6h 3s 10s Ad Js
+Jin's books are: 7d 7c 6s 6d Jh Jc 8s 8d 5c 5d 9h 9s 10c 10h
+
+Andy: Do you have a J?
+Jin: Yes. I have a J
+Andy takes Js from Jin.
+Andy books Jd and Js
+
+Andy: Do you have a K?
+Jin: Go Fish.
+Andy draws a 8c
+
+Game updates after Andy's turn...
+Andy's hand is: Kh Ac 2c 4s Qc 8c
+Andy's books are: Kd Kc Ah As 3h 3d 2h 2s Qs Qd 4d 4c Jd Js
+Jin's hand is: 5h 6h 3s 10s Ad
+Jin's books are: 7d 7c 6s 6d Jh Jc 8s 8d 5c 5d 9h 9s 10c 10h
+
+Jin: Do you have a 3?
+Andy: Go Fish.
+Jin draws a 3c
+Jin books 3s and 3c
+
+Game updates after Jin's turn...
+Andy's hand is: Kh Ac 2c 4s Qc 8c
+Andy's books are: Kd Kc Ah As 3h 3d 2h 2s Qs Qd 4d 4c Jd Js
+Jin's hand is: 5h 6h 10s Ad
+Jin's books are: 7d 7c 6s 6d Jh Jc 8s 8d 5c 5d 9h 9s 10c 10h 3s 3c
 
 Andy: Do you have a 8?
 Jin: Go Fish.
-Andy draws a 5h
+Andy draws a 2d
+Andy books 2c and 2d
 
 Game updates after Andy's turn...
-Andy's hand is: 8h 5h
-Andy's books are: Ah As 4s 4h 6h 6c Kc Ks 2h 2s 7c 7d 5s 5d 9h 9c 4d 4c 3h 3d 8s 8c 2c 2d 6d 6s 10d 10h
-Jin's hand is: 5c
-Jin's books are: Qd Qc 3s 3c 7h 7s 9s 9d Jc Jh 10c 10s Kd Kh Qh Qs Ac Ad Jd Js
+Andy's hand is: Kh Ac 4s Qc 8c
+Andy's books are: Kd Kc Ah As 3h 3d 2h 2s Qs Qd 4d 4c Jd Js 2c 2d
+Jin's hand is: 5h 6h 10s Ad
+Jin's books are: 7d 7c 6s 6d Jh Jc 8s 8d 5c 5d 9h 9s 10c 10h 3s 3c
+
+Jin: Do you have a A?
+Andy: Yes. I have a A
+Jin takes Ac from Andy.
+Jin books Ad and Ac
+
+Jin: Do you have a 5?
+Andy: Go Fish.
+Jin draws a Ks
+
+Game updates after Jin's turn...
+Andy's hand is: Kh 4s Qc 8c
+Andy's books are: Kd Kc Ah As 3h 3d 2h 2s Qs Qd 4d 4c Jd Js 2c 2d
+Jin's hand is: 5h 6h 10s Ks
+Jin's books are: 7d 7c 6s 6d Jh Jc 8s 8d 5c 5d 9h 9s 10c 10h 3s 3c Ad Ac
+
+Andy: Do you have a 8?
+Jin: Go Fish.
+Andy draws a 5s
+
+Game updates after Andy's turn...
+Andy's hand is: Kh 4s Qc 8c 5s
+Andy's books are: Kd Kc Ah As 3h 3d 2h 2s Qs Qd 4d 4c Jd Js 2c 2d
+Jin's hand is: 5h 6h 10s Ks
+Jin's books are: 7d 7c 6s 6d Jh Jc 8s 8d 5c 5d 9h 9s 10c 10h 3s 3c Ad Ac
+
+Jin: Do you have a K?
+Andy: Yes. I have a K
+Jin takes Kh from Andy.
+Jin books Ks and Kh
 
 Jin: Do you have a 5?
 Andy: Yes. I have a 5
-Jin takes 5h from Andy.
-Jin books 5c and 5h
+Jin takes 5s from Andy.
+Jin books 5h and 5s
 
-Jin: Do you have a 5?
+Jin: Do you have a 6?
 Andy: Go Fish.
-Jin draws a 8d
+Jin draws a 6c
+Jin books 6h and 6c
 
 Game updates after Jin's turn...
-Andy's hand is: 8h
-Andy's books are: Ah As 4s 4h 6h 6c Kc Ks 2h 2s 7c 7d 5s 5d 9h 9c 4d 4c 3h 3d 8s 8c 2c 2d 6d 6s 10d 10h
-Jin's hand is: 8d
-Jin's books are: Qd Qc 3s 3c 7h 7s 9s 9d Jc Jh 10c 10s Kd Kh Qh Qs Ac Ad Jd Js 5c 5h
-
-Andy: Do you have a 8?
-Jin: Yes. I have a 8
-Andy takes 8d from Jin.
-Andy books 8h and 8d
+Andy's hand is: 4s Qc 8c
+Andy's books are: Kd Kc Ah As 3h 3d 2h 2s Qs Qd 4d 4c Jd Js 2c 2d
+Jin's hand is: 10s
+Jin's books are: 7d 7c 6s 6d Jh Jc 8s 8d 5c 5d 9h 9s 10c 10h 3s 3c Ad Ac Ks Kh 5h 5s 6h 6c
 
 Andy: Do you have a 8?
 Jin: Go Fish.
-GAME OVER! (Deck is empty).
-Andy ends with 15 books!
-Jin ends with 11 books!
+Andy draws a Qh
+Andy books Qc and Qh
 
-Andy wins!
+Game updates after Andy's turn...
+Andy's hand is: 4s 8c
+Andy's books are: Kd Kc Ah As 3h 3d 2h 2s Qs Qd 4d 4c Jd Js 2c 2d Qc Qh
+Jin's hand is: 10s
+Jin's books are: 7d 7c 6s 6d Jh Jc 8s 8d 5c 5d 9h 9s 10c 10h 3s 3c Ad Ac Ks Kh 5h 5s 6h 6c
+
+Jin: Do you have a 10?
+Andy: Go Fish.
+Jin draws a 9c
+
+Game updates after Jin's turn...
+Andy's hand is: 4s 8c
+Andy's books are: Kd Kc Ah As 3h 3d 2h 2s Qs Qd 4d 4c Jd Js 2c 2d Qc Qh
+Jin's hand is: 10s 9c
+Jin's books are: 7d 7c 6s 6d Jh Jc 8s 8d 5c 5d 9h 9s 10c 10h 3s 3c Ad Ac Ks Kh 5h 5s 6h 6c
+
+Andy: Do you have a 8?
+Jin: Go Fish.
+Andy draws a 8h
+Andy books 8c and 8h
+
+Game updates after Andy's turn...
+Andy's hand is: 4s
+Andy's books are: Kd Kc Ah As 3h 3d 2h 2s Qs Qd 4d 4c Jd Js 2c 2d Qc Qh 8c 8h
+Jin's hand is: 10s 9c
+Jin's books are: 7d 7c 6s 6d Jh Jc 8s 8d 5c 5d 9h 9s 10c 10h 3s 3c Ad Ac Ks Kh 5h 5s 6h 6c
+
+Jin: Do you have a 10?
+Andy: Go Fish.
+Jin draws a 4h
+
+Game updates after Jin's turn...
+Andy's hand is: 4s
+Andy's books are: Kd Kc Ah As 3h 3d 2h 2s Qs Qd 4d 4c Jd Js 2c 2d Qc Qh 8c 8h
+Jin's hand is: 10s 9c 4h
+Jin's books are: 7d 7c 6s 6d Jh Jc 8s 8d 5c 5d 9h 9s 10c 10h 3s 3c Ad Ac Ks Kh 5h 5s 6h 6c
+
+Andy: Do you have a 4?
+Jin: Yes. I have a 4
+Andy takes 4h from Jin.
+Andy books 4s and 4h
+
+Andy: Do you have a 4?
+Jin: Go Fish.
+Andy draws a 9d
+
+Game updates after Andy's turn...
+Andy's hand is: 9d
+Andy's books are: Kd Kc Ah As 3h 3d 2h 2s Qs Qd 4d 4c Jd Js 2c 2d Qc Qh 8c 8h 4s 4h
+Jin's hand is: 10s 9c
+Jin's books are: 7d 7c 6s 6d Jh Jc 8s 8d 5c 5d 9h 9s 10c 10h 3s 3c Ad Ac Ks Kh 5h 5s 6h 6c
+
+Jin: Do you have a 10?
+Andy: Go Fish.
+Jin draws a 10d
+Jin books 10s and 10d
+
+Game updates after Jin's turn...
+Andy's hand is: 9d
+Andy's books are: Kd Kc Ah As 3h 3d 2h 2s Qs Qd 4d 4c Jd Js 2c 2d Qc Qh 8c 8h 4s 4h
+Jin's hand is: 9c
+Jin's books are: 7d 7c 6s 6d Jh Jc 8s 8d 5c 5d 9h 9s 10c 10h 3s 3c Ad Ac Ks Kh 5h 5s 6h 6c 10s 10d
+
+Andy: Do you have a 9?
+Jin: Yes. I have a 9
+Andy takes 9c from Jin.
+Andy books 9d and 9c
+
+Andy: Do you have a 9?
+Jin: Go Fish.
+Andy draws a 7h
+
+Game updates after Andy's turn...
+Andy's hand is: 7h
+Andy's books are: Kd Kc Ah As 3h 3d 2h 2s Qs Qd 4d 4c Jd Js 2c 2d Qc Qh 8c 8h 4s 4h 9d 9c
+Jin's hand is: 
+Jin's books are: 7d 7c 6s 6d Jh Jc 8s 8d 5c 5d 9h 9s 10c 10h 3s 3c Ad Ac Ks Kh 5h 5s 6h 6c 10s 10d
+
+Jin's hand is empty so he draws from the top of the deck.
+Jin draws a 7s.
+
+Game updates after Jin's turn...
+Andy's hand is: 7h
+Andy's books are: Kd Kc Ah As 3h 3d 2h 2s Qs Qd 4d 4c Jd Js 2c 2d Qc Qh 8c 8h 4s 4h 9d 9c
+Jin's hand is: 7s
+Jin's books are: 7d 7c 6s 6d Jh Jc 8s 8d 5c 5d 9h 9s 10c 10h 3s 3c Ad Ac Ks Kh 5h 5s 6h 6c 10s 10d
+
+Andy: Do you have a 7?
+Jin: Yes. I have a 7
+Andy takes 7s from Jin.
+Andy books 7h and 7s
+
+GAME OVER! (Deck is empty).
+Andy ends with 13 books!
+Jin ends with 13 books!
+
+Andy and Jin draw!
